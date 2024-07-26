@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#result{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+padding: 20px 120px;
+}
+
+
+
+#result h1{
+    font-size: 20px;
+}
+#result img{
+    width: 100%;
+}
+
+#result img{
+    filter: grayscale() blur(3px);
+    transition: 1s;
+}
+
+#result div{
+    overflow: hidden;
+}
+
+#result img:hover{
+    filter: none;
+    transform: rotate(-1deg) scale(1.2);
+}

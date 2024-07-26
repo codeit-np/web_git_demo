@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primaryColor: #3c52c3;
+        --secondaryColor: #61937b;
+        --headingColor: #3c16e6;
+      }
+
+      h1 {
+        color: var(--primaryColor);
+      }
+
+      p {
+        color: var(--headingColor);
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #card {
+        width: 50%;
+        border: 1px solid black;
+        padding: 10px 16px;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+      }
+
+      #btnClose {
+        width: 20px;
+        height: 20px;
+        background-color: var(--primaryColor);
+        color: white;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        border: none;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <h1>Message</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        nobis magnam, dignissimos necessitatibus, exercitationem non assumenda
+        dolorum eius iste sapiente sequi, nesciunt dolores at enim expedita
+        nihil voluptas corporis vitae veniam quaerat quia inventore quos!
+        Accusamus cupiditate suscipit itaque excepturi eum consectetur a dolore,
+        culpa nulla, cum rerum doloremque magnam.
+      </p>
+
+      <button id="btnClose" onclick="close()">X</button>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
